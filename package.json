@@ -1,0 +1,8 @@
+{
+  "name": "egret-intro",
+  "version": "0.0.1",
+  "dependencies": {
+    "@explorablegraph/explorable": "0.0.6"
+  },
+  "type": "module"
+}

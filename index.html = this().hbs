@@ -1,0 +1,10 @@
+---
+people = parse team.yaml:
+---
+<ul>
+{{#each people}}
+  <li>
+    <a href="html/{{name}}.html">{{name}}</a>
+  </li>
+{{/each}}
+</ul>
