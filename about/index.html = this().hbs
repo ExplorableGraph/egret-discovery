@@ -4,7 +4,8 @@ people = parse team.yaml:
 <ul>
 {{#each people}}
   <li>
-    <a href="html/{{name}}.html">{{name}}</a>
+    <a href="team/{{id}}.html">{{name}}</a>
+    <i>{{position}}</i>
   </li>
 {{/each}}
 </ul>

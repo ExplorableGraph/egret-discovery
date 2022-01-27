@@ -1,0 +1,54 @@
+# TODO:
+# - Obtain stock photos, crop, etc.
+# - Remove gender
+# - Write bios
+- id: aivanonko
+  name: Annie Ivanonko
+  gender: Female
+  location: Jakarta
+  position: Experience Designer
+- id: nschoenrock
+  name: Nancee Schoenrock
+  gender: Female
+  location: Lisbon
+  position: Editor
+- id: rglanvill
+  name: Rudolph Glanvill
+  gender: Male
+  location: Lima
+  position: Administrator
+- id: rscala
+  name: Russell Scala
+  gender: Male
+  location: Prague
+  position: Engineering Architect
+- id: jfrill
+  name: Jenny Frill
+  gender: Female
+  location: Beijing
+  position: Visual Designer
+- id: cbudcock
+  name: Caria Budcock
+  gender: Male
+  location: Seoul
+  position: Developer
+- id: gballance
+  name: Gerry Ballance
+  gender: Female
+  location: Delhi
+  position: Business Development
+- id: lcroxon
+  name: Louie Croxon
+  gender: Male
+  location: Santiago
+  position: Researcher
+- id: jnagle
+  name: Jacky Nagle
+  gender: Female
+  location: Manila
+  position: President
+- id: 1mdavenhall
+  name: Marnia Davenhall
+  gender: Female
+  location: Los Angeles
+  position: Customer Outreach

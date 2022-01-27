@@ -1,8 +1,11 @@
 {
   "name": "egret-intro",
   "version": "0.0.1",
+  "type": "module",
   "dependencies": {
     "@explorablegraph/explorable": "0.0.6"
   },
-  "type": "module"
+  "scripts": {
+    "start": "pika serve"
+  }
 }
