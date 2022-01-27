@@ -1,0 +1,40 @@
+- id: annisa
+  name: Annisa Wijaya
+  location: Jakarta
+  position: Experience Designer
+- id: imani
+  name: Imani Davenhall
+  location: Los Angeles
+  position: President
+- id: ines
+  name: Ines Silva
+  location: Lisbon
+  position: Editor
+- id: jenny
+  name: Jenny Nguyen
+  location: Hanoi
+  position: Visual Designer
+- id: luis
+  name: Luis Cardenas
+  location: Lima
+  position: Administrator
+- id: maria
+  name: Maria Navarro
+  location: Manila
+  position: Customer Outreach
+- id: rakesh
+  name: Rakesh Patel
+  location: Delhi
+  position: Business Development
+- id: sabastian
+  name: Sebastian Fuentes
+  location: Santiago
+  position: Researcher
+- id: seojun
+  name: Seo-jun Kim
+  location: Seoul
+  position: Developer
+- id: tomas
+  name: Tomas Svoboda
+  location: Prague
+  position: Engineering Architect
