@@ -25,9 +25,61 @@ body {
   --e-global-typography-00d6437-font-family: "Rubik";
   color: var(--e-global-color-text);
   font-family: "Rubik", Sans-serif;
+  padding: 4em;
 }
 
-h2 {
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 4em;
+}
+
+.icon {
+  width: 4em;
+}
+
+.tileGrid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, 250px);
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+
+.tile {
+  list-style: none;
+  padding: 25px;
+  border-radius: 1em;
+  transition-property: background, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.tile:hover {
+  background: #eee;
+  transform: scale(1.01);
+}
+
+.tile img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.tile a {
+  color: inherit;
+  display: grid;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+.tile .name {
   --page-title-display: none;
   -webkit-font-smoothing: antialiased;
   word-wrap: break-word;
@@ -42,22 +94,18 @@ h2 {
   text-transform: none;
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 1em 0 0 0;
   line-height: 1;
   font-size: 19px;
 }
 
-.tile {
-  list-style: none;
-}
-
-.tile img {
-  aspect-ratio: 1;
-  border-radius: 50%;
-  width: 150px;
-}
-
-.tile a {
-  color: inherit;
-  text-decoration: none;
+.tile .position {
+  color: #4987ae;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
 }
