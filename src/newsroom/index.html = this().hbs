@@ -1,0 +1,26 @@
+---
+posts = map(releases, parse):
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Newsroom</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
+    <header>
+      <img class="icon" src="../about/personIcon.svg">
+      <h1>News</h1>
+    </header>
+    <ul>
+      {{#each posts}}
+      <li>
+        {{title}} {{{bodyText}}}
+      </li>
+      {{/each}}
+    </ul>
+  </body>
+</html>
+

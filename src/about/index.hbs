@@ -1,6 +1,3 @@
----
-people = parse team.yaml:
----
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,10 +12,10 @@ people = parse team.yaml:
       <h1>Our Team</h1>
     </header>
     <ul class="tileGrid">
-      {{#each people}}
+      {{#each this}}
       <li class="tile">
-        <a href="team/{{id}}.html">
-          <img class="avatar small" src="thumbnails/{{id}}.jpg" alt="{{name}}">
+        <a href="team/{{@key}}.html">
+          <img class="avatar small" src="thumbnails/{{@key}}.jpg" alt="{{name}}">
             <h2 class="name">{{name}}</h2>
           <div class="position">{{position}}</div>
         </a>
