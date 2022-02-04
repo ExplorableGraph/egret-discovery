@@ -1,5 +1,0 @@
----
-title: A
----
-
-Hello, A.
