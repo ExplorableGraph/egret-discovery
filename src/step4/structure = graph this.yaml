@@ -1,0 +1,18 @@
+alice: |
+  id: alice
+  name: Alice Wijaya
+  location: Jakarta
+  position: Experience Designer
+  bio: …
+imani: |
+  id: imani
+  name: Imani Davenhall
+  location: Los Angeles
+  position: President
+  bio: …
+ines: |
+  id: ines
+  name: Ines Silva
+  location: Lisbon
+  position: Editor
+  bio: …

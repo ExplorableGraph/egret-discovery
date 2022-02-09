@@ -25,7 +25,7 @@ body {
   --e-global-typography-00d6437-font-family: "Rubik";
   color: var(--e-global-color-text);
   font-family: "Rubik", Sans-serif;
-  padding: 4em;
+  padding: 1em;
 }
 
 h1 {
@@ -131,4 +131,10 @@ header {
 
 .bio {
   max-width: 500px;
+}
+
+@media (min-width: 800px) {
+  body {
+    padding: 4em;
+  }
 }
