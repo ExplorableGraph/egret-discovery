@@ -1,38 +1,15 @@
-alice:
-  id: alice
+- id: alice
   name: Alice Wijaya
   location: Jakarta
   position: Experience Designer
-  bio: |
-    Alice opens the line of communication between clients, customers, and
-    businesses to get projects done. With over 15 years in both public and
-    private sectors, she has experience in management consultation, team
-    building, professional development, strategic implementation, and company
-    collaboration. She has a passion for helping people and businesses succeed,
-    and is always looking for ways to improve the world.
-imani:
-  id: imani
+  bio: (Alice's bio goes here)
+- id: imani
   name: Imani Davenhall
   location: Los Angeles
   position: President
-  bio: |
-    After working as a manager for numerous startups over the years, I decided
-    to take the plunge and start a business of my own. I love the challenges I
-    face as a entrepreneur, and it didn't take long for me to discover that this
-    was my calling. I feel that I have the ability to create a business that is
-    both profitable and sustainable.
-ines:
-  id: ines
+  bio: (Imani's bio goes here)
+- id: ines
   name: Ines Silva
   location: Lisbon
   position: Editor
-  bio: |
-    Ines Silva received her B.S. in Behavioral Science in 2017. It was during
-    university that she developed her passion for writing and translating. She
-    has worked with clients in the public and private sectors, including the
-    United States Department of Transportation, the United States Department of
-    Energy, the National Aeronautics and Space Administration, and the National
-    Science Foundation. She has also worked with clients in the private sector,
-    including the National Council of the American Chamber of Commerce, the
-    National Association of Manufacturers, and the National Association of
-    Manufacturers of America.
+  bio: (Ines's bio goes here)

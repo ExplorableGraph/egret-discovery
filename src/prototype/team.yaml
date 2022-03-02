@@ -1,0 +1,12 @@
+alice:
+  id: alice
+  name: Alice Wijaya
+  position: Experience Designer
+imani:
+  id: imani
+  name: Imani Davenhall
+  position: President
+ines:
+  id: ines
+  name: Ines Silva
+  position: Editor
