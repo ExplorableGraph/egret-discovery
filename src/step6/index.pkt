@@ -12,15 +12,15 @@
       <h1>Our Team</h1>
     </header>
     <ul class="tileGrid">
-      {{#each this}}
+{{shallowMap team.yaml, pika`
       <li class="tile">
         <a href="team/{{@key}}">
-          <img class="avatar small" src="thumbnails/{{@key}}.jpg" alt="{{name}}">
-            <h2 class="name">{{name}}</h2>
+          <img class="avatar small" src="/src/assets/headshots/{{@key}}.jpg" alt="{{name}}">
+          <h2 class="name">{{name}}</h2>
           <div class="position">{{position}}</div>
         </a>
       </li>
-      {{/each}}
+`}}
     </ul>
   </body>
 </html>
