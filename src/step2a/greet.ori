@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{bodyText}}</title>
+    <title>{{ bodyText }}</title>
   </head>
   <body>
-    Hello, <strong>{{bodyText}}</strong>!
+    Hello, <strong>{{ bodyText }}</strong>!
   </body>
 </html>

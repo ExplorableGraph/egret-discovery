@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{name}} - About Us</title>
+    <title>{{ name }} - About Us</title>
     <link rel="stylesheet" href="/src/assets/main.css">
   </head>
   <body>
@@ -14,13 +14,13 @@
       </header>
     </a>
     <main class="person">
-      <img class="avatar large" src="/src/assets/headshots/{{id}}.jpg" alt="{{name}}">
-      <h2 class="name">{{name}}</h2>
+      <img class="avatar large" src="/src/assets/headshots/{{ id }}.jpg" alt="{{ name }}">
+      <h2 class="name">{{ name }}</h2>
       <div class="position">
-        {{position}}, {{location}}
+        {{ position }}, {{ location }}
       </div>
       <p class="bio">
-        {{bio}}
+        {{ bio }}
       </p>
     </main>
   </body>
