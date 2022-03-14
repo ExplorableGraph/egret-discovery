@@ -1,0 +1,26 @@
+---
+next = nextKey(pages, page):
+previous = previousKey(pages, page):
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{title}}</title>
+    <script src="../keyboard.js"></script>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    {{@value}}
+    {{if(previous, `
+      <p>
+        <a id="linkPrevious" href="{{previous}}">Previous</a>
+      </p>
+    `)}}
+    {{if(next, `
+      <p>
+        <a id="linkNext" href="{{next}}">Next</a>
+      </p>
+    `)}}
+  </body>
+</html>

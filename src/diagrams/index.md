@@ -1,5 +1,6 @@
 <style>
   body {
+    background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 3em 3rem 20em 3rem;
