@@ -1,0 +1,11 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Joe</title>
+  </head>
+  <body>
+    Hello,
+    <strong>Joe</strong>!
+  </body>
+</html>
