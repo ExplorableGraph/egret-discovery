@@ -1,0 +1,6 @@
+index.html: "<title>About Us</title>"
+
+team:
+  Alice: "<title>Alice</title>"
+  Bob: "<title>Bob</title>"
+  Carol: "<title>Carol</title>"
