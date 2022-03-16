@@ -47,12 +47,31 @@ body {
 }
 
 h1 {
+  color: #222e3e;
+  font-weight: normal;
+  font-size: 3em;
   margin: 0;
 }
 
-img {
+figure {
+  align-items: center;
+  display: grid;
+  gap: 1em;
+  grid-template-rows: minmax(0, 1fr);
+  justify-items: center;
+  margin: 0;
   max-height: 100%;
   max-width: 100%;
+}
+
+figure > * {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+figcaption {
+  align-self: start;
+  font-style: italic;
 }
 
 .slideContainer {
@@ -62,7 +81,7 @@ img {
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   height: 100vh;
-  padding: 4em;
+  padding: 2em;
   scroll-snap-align: start;
   width: 100vw;
 }
@@ -73,21 +92,29 @@ img {
   background: #fafafa;
   color: rgb(51, 51, 51);
   display: grid;
-  gap: 3em;
-  grid-template-rows: auto minmax(0, 1fr);
+  gap: 2em 3em;
+  /* grid-template-columns: minmax(0, 1fr); */
+  grid-template-rows: minmax(0, 1fr);
   height: 100%;
-  padding: 3em;
+  padding: 2em;
   max-width: 100%;
 }
 
-.slideContent {
+.figures {
   align-content: center;
   align-items: center;
-  display: grid;
-  gap: 3em;
   grid-auto-flow: column;
-  grid-template-rows: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
   justify-content: space-evenly;
+  justify-items: center;
+}
+
+.two-up {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.three-up {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
 }
 
 @media (max-aspect-ratio: 16/ 9) {

@@ -1,0 +1,5 @@
+index.html: "<title>About Us</title>"
+
+team = map(teamByName, =>`<title>{{name}}</title>`):
+
+avatars = map(teamByName, =>`{{name}}.jpeg`):
