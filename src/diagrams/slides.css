@@ -1,0 +1,77 @@
+@font-face {
+  font-display: fallback;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Open Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("assets/fonts/OpenSans-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #c18b2a;
+  background-attachment: fixed;
+  background-image: url(assets/textureGold.jpeg);
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: grid;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100%;
+  justify-items: center;
+  margin: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.slideContainer {
+  align-items: stretch;
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+  padding: 4em;
+  scroll-snap-align: start;
+  width: 100vw;
+}
+
+.slide {
+  aspect-ratio: 16/ 9;
+  box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+  background: #fafafa;
+  color: rgb(51, 51, 51);
+  height: 100%;
+  padding: 2em;
+  max-width: 100%;
+}
+
+.slide :first-child {
+  margin-top: 0;
+}
+
+@media (max-aspect-ratio: 16/ 9) {
+  .slideContainer {
+    align-content: center;
+  }
+}
