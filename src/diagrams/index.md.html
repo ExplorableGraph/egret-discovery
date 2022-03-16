@@ -1,0 +1,76 @@
+<style>
+  body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 3em 3rem 20em 3rem;
+  }
+
+  * + h1 {
+    margin-top: 10em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .transformation {
+    display: grid;
+    gap: 2em;
+    grid-auto-flow: column;
+  }
+</style>
+
+<h1 id="goal">Goal</h1>
+<div>
+  <img src="svgs/full-site.svg">
+</div>
+
+<img src="svgs/3-site.svg">
+
+<h1 id="start">Start</h1>
+<pre><code class="language-{{&#39;yaml&#39;}}">{{ team.yaml }}
+</code></pre>
+<img src="svgs/1-team.svg">
+
+<h1 id="transformations">Transformations</h1>
+<div class="transformation">
+  <img src="svgs/1-team.svg">
+  <img src="svgs/2-byName.svg">
+  <img src="svgs/3-site.svg">
+</div>
+
+<h1 id="person-template">Person template</h1>
+<div class="transformation">
+  <div>
+    <div>{{ svg personTemplate.yaml }}</div>
+    <div>{{ svg team.yaml/0 }}</div>
+  </div>
+  <div>
+    <div>{{ svg personText.yaml }}</div>
+    <p>
+      Result: <code>Hello, Alice!</code>
+    </p>
+  </div>
+</div>
+
+<h1 id="index-page-template">Index page template</h1>
+<div class="transformation">
+  <div>
+    <div>{{ svg indexTemplate.yaml }}</div>
+    <div>{{ svg team.yaml }}</div>
+  </div>
+  <div>
+    <div>{{ svg indexText.yaml }}</div>
+    <p>
+      Result:
+    </p>
+    <pre>
+<code>
+About Us
+{{ map team.yaml, =>`{{name}}
+` }}
+</code>
+    </pre>
+  </div>
+</div>

@@ -46,9 +46,20 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+h1 {
+  margin: 0;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .slideContainer {
   align-items: stretch;
   display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   height: 100vh;
   padding: 4em;
@@ -57,17 +68,26 @@ body {
 }
 
 .slide {
-  aspect-ratio: 16/ 9;
+  /* aspect-ratio: 16/ 9; */
   box-shadow: 0 0 20px rgb(0 0 0 / 50%);
   background: #fafafa;
   color: rgb(51, 51, 51);
+  display: grid;
+  gap: 3em;
+  grid-template-rows: auto minmax(0, 1fr);
   height: 100%;
-  padding: 2em;
+  padding: 3em;
   max-width: 100%;
 }
 
-.slide :first-child {
-  margin-top: 0;
+.slideContent {
+  align-content: center;
+  align-items: center;
+  display: grid;
+  gap: 3em;
+  grid-auto-flow: column;
+  grid-template-rows: minmax(0, 1fr);
+  justify-content: space-evenly;
 }
 
 @media (max-aspect-ratio: 16/ 9) {
