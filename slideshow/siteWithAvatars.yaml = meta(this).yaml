@@ -1,5 +1,5 @@
 index.html: "<title>About Us</title>"
 
-team = map(teamByName, =>`<title>{{name}}</title>`):
+team = map(teamByName, =>`<title>{{name}}</title>`, '', '.html'):
 
-avatars = map(teamByName, =>`{{name}}.jpeg`):
+avatars = map(teamByName, =>'[image data]', '', '.jpeg'):

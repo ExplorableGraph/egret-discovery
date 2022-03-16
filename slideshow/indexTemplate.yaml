@@ -1,2 +1,2 @@
-- "About Us"
-- "{{ map(teamByName, => name) }}"
+- "<h1>About Us</h1>"
+- "{{map(team.yaml,=>`<li>{{name}}</li>`)}}"

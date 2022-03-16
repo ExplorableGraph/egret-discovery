@@ -81,7 +81,7 @@ figcaption {
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   height: 100vh;
-  padding: 2em;
+  padding: 4%;
   scroll-snap-align: start;
   width: 100vw;
 }

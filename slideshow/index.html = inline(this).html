@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Graph Origami</title>
+    <link rel="stylesheet" href="slides.css" />
+  </head>
+  <body>
+    <div class="slideContainer" style="padding: 10%">
+      <div class="slide" style="align-content: center; aspect-ratio: 1; grid-template-rows: auto auto; justify-items: center;">
+        <img src="assets/bird.svg" style="width: 200px;">
+        <h1>Graph Origami</h1>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures">
+        <figure>
+          <img src="site.yaml.svg" />
+        </figure>
+        <figcaption>Desired graph for the About Us website</figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures two-up">
+        <pre><code>{{ team.yaml }}</code></pre>
+        <figcaption>Array of people in team.yaml</figcaption>
+
+        <figure>
+          <img src="team.yaml.svg" />
+        </figure>
+        <figcaption>Graph representation</figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures three-up">
+        <figure>
+          <img src="team.yaml.svg" />
+        </figure>
+        <figcaption>Source form has numbers as keys</figcaption>
+
+        <figure>
+          <img src="teamByName.svg" />
+        </figure>
+        <figcaption>Use names as keys</figcaption>
+
+        <figure>
+          <img src="team.svg" />
+        </figure>
+        <figcaption>Map values to HTML</figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures three-up">
+        <figure>
+          <pre><code>Hello, \{{name}}!</code></pre>
+          <img src="personTemplate.yaml.svg" />
+        </figure>
+        <figcaption>Graph for a person template, plus…</figcaption>
+        <figure>
+          <pre><code></code></pre>
+          <img src="firstPerson.svg" />
+        </figure>
+        <figcaption>Graph for a single person equals…</figcaption>
+        <figure>
+          <pre><code>Hello, {{team.yaml/0/name}}!</code></pre>
+          <img src="personText.yaml.svg" />
+        </figure>
+        <figcaption>
+          Text graph that concatenates to final result</code>
+        </figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures three-up">
+        <figure>
+          <pre><code>&lt;h1>About Us&lt;/h1>
+\{{ map team.yaml, =>`&lt;li>\{{name}}&lt;/li>` }}</code></pre>
+          <img src="indexTemplate.yaml.svg" />
+        </figure>
+        <figcaption>Graph for an index page template, plus…</figcaption>
+        <figure>
+          <pre><code></code></pre>
+          <img src="team.yaml.svg" />
+        </figure>
+        <figcaption>Graph for the whole team equals…</figcaption>
+        <figure>
+          <pre><code>&lt;h1>About Us&lt;/h1>
+{{ map team.yaml, =>`&lt;li>{{name}}&lt;/li>
+` }}</code></pre>
+          <img src="indexText.yaml.svg" />
+        </figure>
+        <figcaption>
+          Text graph that concatenates to final result
+        </figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures">
+        <figure>
+          <img src="siteWithAvatars.yaml.svg" />
+        </figure>
+        <figcaption>Graph of About Us site with avatars</figcaption>
+      </div>
+    </div>
+  </body>
+</html>
