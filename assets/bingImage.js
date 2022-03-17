@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { BING_SEARCH_API_KEY } from "./env.js";
+import { BING_SEARCH_API_KEY } from "../env.js";
 
 export default async function bing(query) {
   const response = await fetch(

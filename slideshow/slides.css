@@ -49,7 +49,6 @@ body {
 h1 {
   color: #222e3e;
   font-weight: normal;
-  font-size: 3em;
   margin: 0;
 }
 
@@ -100,6 +99,14 @@ figcaption {
   max-width: 100%;
 }
 
+.titleSlide {
+  align-content: center;
+  aspect-ratio: 1;
+  gap: 1em;
+  grid-template-rows: repeat(2, minmax(0, auto));
+  justify-items: center;
+}
+
 .figures {
   align-content: center;
   align-items: center;
@@ -110,11 +117,23 @@ figcaption {
 }
 
 .two-up {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, auto) minmax(0, auto);
 }
 
 .three-up {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto);
+}
+
+.noCaption {
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.textAndImage {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.heart {
+  width: 15vw;
 }
 
 @media (max-aspect-ratio: 16/ 9) {

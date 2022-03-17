@@ -6,16 +6,40 @@
     <title>Graph Origami</title>
     <link rel="stylesheet" href="slides.css" />
   </head>
-  <body>
-    <div class="slideContainer" style="padding: 10%">
-      <div class="slide" style="align-content: center; aspect-ratio: 1; grid-template-rows: auto auto; justify-items: center;">
-        <img src="assets/bird.svg" style="width: 200px;">
+  <body tabindex="-1" autofocus>
+    <div class="slideContainer" style="padding: 7%">
+      <div class="slide titleSlide">
+        <figure>
+          <img src="assets/bird.svg" style="width: 200px;">
+        </figure>
         <h1>Graph Origami</h1>
       </div>
     </div>
 
     <div class="slideContainer">
-      <div class="slide figures">
+      <div class="slide figures noCaption">
+        <figure>
+          <img src="assets/artifact.svg" style="width: 50vw;" />
+        </figure>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures noCaption">
+        <figure>
+          <img src="assets/sourceAndResult.svg" style="width: 50vw;" />
+        </figure>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures" style="grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr);">
+        {{ map(assets/heart, =>`<div class="heart">{{@value}}</div>`) }}
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures ">
         <figure>
           <img src="site.yaml.svg" />
         </figure>
@@ -36,6 +60,34 @@
     </div>
 
     <div class="slideContainer">
+      <div class="slide figures two-up">
+        <figure>
+          <img src="team.yaml.svg" />
+        </figure>
+        <figcaption>Want to transform this data graph…</figcaption>
+
+        <figure>
+          <img src="site.yaml.svg" />
+        </figure>
+        <figcaption>…into this website graph</figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures two-up">
+        <figure>
+          <img src="team.yaml.svg" />
+        </figure>
+        <figcaption>Team graph</figcaption>
+
+        <figure>
+          <img src="greetings.svg" />
+        </figure>
+        <figcaption>Greetings graph</figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
       <div class="slide figures three-up">
         <figure>
           <img src="team.yaml.svg" />
@@ -50,63 +102,62 @@
         <figure>
           <img src="team.svg" />
         </figure>
-        <figcaption>Map values to HTML</figcaption>
+        <figcaption>Map values to HTML and add extension</figcaption>
       </div>
     </div>
 
     <div class="slideContainer">
       <div class="slide figures three-up">
-        <figure>
+        <figure class="textAndImage">
           <pre><code>Hello, \{{name}}!</code></pre>
           <img src="personTemplate.yaml.svg" />
         </figure>
-        <figcaption>Graph for a person template, plus…</figcaption>
-        <figure>
-          <pre><code></code></pre>
+        <figcaption>Graph for a person template…</figcaption>
+        <figure class="textAndImage">
+          <pre><code>&nbsp;</code></pre>
           <img src="firstPerson.svg" />
         </figure>
-        <figcaption>Graph for a single person equals…</figcaption>
-        <figure>
+        <figcaption>…combines with graph for a single person…</figcaption>
+        <figure class="textAndImage">
           <pre><code>Hello, {{team.yaml/0/name}}!</code></pre>
           <img src="personText.yaml.svg" />
         </figure>
         <figcaption>
-          Text graph that concatenates to final result</code>
+          …to create graph that flattens to final text</code>
         </figcaption>
       </div>
     </div>
 
     <div class="slideContainer">
       <div class="slide figures three-up">
-        <figure>
+        <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
 \{{ map team.yaml, =>`&lt;li>\{{name}}&lt;/li>` }}</code></pre>
           <img src="indexTemplate.yaml.svg" />
         </figure>
-        <figcaption>Graph for an index page template, plus…</figcaption>
-        <figure>
-          <pre><code></code></pre>
+        <figcaption>Graph for an index page template…</figcaption>
+        <figure class="textAndImage">
+          <pre><code>&nbsp;</code></pre>
           <img src="team.yaml.svg" />
         </figure>
-        <figcaption>Graph for the whole team equals…</figcaption>
-        <figure>
+        <figcaption>…combines with graph for the team…</figcaption>
+        <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
 {{ map team.yaml, =>`&lt;li>{{name}}&lt;/li>
 ` }}</code></pre>
           <img src="indexText.yaml.svg" />
         </figure>
         <figcaption>
-          Text graph that concatenates to final result
+          …to create graph that flattens to final text
         </figcaption>
       </div>
     </div>
 
     <div class="slideContainer">
-      <div class="slide figures">
+      <div class="slide figures noCaption">
         <figure>
           <img src="siteWithAvatars.yaml.svg" />
         </figure>
-        <figcaption>Graph of About Us site with avatars</figcaption>
       </div>
     </div>
   </body>
