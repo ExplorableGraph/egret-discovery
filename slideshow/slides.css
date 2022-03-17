@@ -73,10 +73,16 @@ figcaption {
   font-style: italic;
 }
 
+pre {
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
 .slideContainer {
+  align-content: center;
   align-items: stretch;
   display: grid;
-  grid-template-rows: minmax(0, 1fr);
+  grid-template-rows: minmax(0, auto);
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   height: 100vh;
