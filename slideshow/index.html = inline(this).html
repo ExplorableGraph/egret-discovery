@@ -35,12 +35,6 @@
       </div>
     </div>
 
-    <div class="slideContainer">
-      <div class="slide figures" style="grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr);">
-        {{ map(assets/heart, =>`<div class="heart">{{@value}}</div>`) }}
-      </div>
-    </div>
-
     -->
 
     <div class="slideContainer">
@@ -75,6 +69,12 @@
           <img src="site.yaml.svg" />
         </figure>
         <figcaption>…into this website graph</figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures" style="grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr);">
+        {{ map(assets/heart, =>`<div class="heart">{{@value}}</div>`) }}
       </div>
     </div>
 
@@ -159,7 +159,10 @@
     </div>
 
     <div class="slideContainer">
-      <div class="slide figures noCaption">
+      <div class="slide figures two-up noCaption">
+        <figure>
+          <img src="team.yaml.svg" />
+        </figure>
         <figure>
           <img src="siteWithAvatars.yaml.svg" />
         </figure>
