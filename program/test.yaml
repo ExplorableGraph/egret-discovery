@@ -1,0 +1,5 @@
+team.yaml:
+  - name: Alice
+  - name: Bob
+  - name: Carol
+teamByName = mapKeys(team.yaml, 'name'):
