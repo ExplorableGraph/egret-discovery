@@ -1,3 +1,3 @@
 index.html: "<title>About Us</title>"
 
-team = map(teamByName, =>`<title>{{name}}</title>`, '', '.html'):
+team = map(teamByName, =`<title>{{name}}</title>`, '', '.html'):

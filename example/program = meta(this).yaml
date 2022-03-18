@@ -27,7 +27,7 @@ indexed.yaml = defineKey(team.yaml, 'id'):
 # Create the main page by mapping the indexed data to the Origami template fragment.
 #
 index.html = this().ori: |
-  {{ shallowMap indexed.yaml, =>`
+  {{ shallowMap indexed.yaml, =`
     <li>
       <a href="team/{{ @key }}">{{ name }}</a>
       {{ position }}

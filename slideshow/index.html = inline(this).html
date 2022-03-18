@@ -74,7 +74,7 @@
 
     <div class="slideContainer">
       <div class="slide figures" style="grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr);">
-        {{ map(assets/heart, =>`<div class="heart">{{@value}}</div>`) }}
+        {{ map(assets/heart, =`<div class="heart">{{@value}}</div>`) }}
       </div>
     </div>
 
@@ -137,7 +137,7 @@
       <div class="slide figures three-up">
         <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
-\{{ map team.yaml, =>`&lt;li>\{{name}}&lt;/li>` }}</code></pre>
+\{{ map team.yaml, =`&lt;li>\{{name}}&lt;/li>` }}</code></pre>
           <img src="indexTemplate.yaml.svg" />
         </figure>
         <figcaption>Graph for an index page template…</figcaption>
@@ -148,7 +148,7 @@
         <figcaption>…combines with graph for the team…</figcaption>
         <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
-{{ map team.yaml, =>`&lt;li>{{name}}&lt;/li>
+{{ map team.yaml, =`&lt;li>{{name}}&lt;/li>
 ` }}</code></pre>
           <img src="indexText.yaml.svg" />
         </figure>

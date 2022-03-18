@@ -12,7 +12,7 @@
       <h1>About Us</h1>
     </header>
     <ul class="tileGrid">
-{{ shallowMap teamByName, =>`
+{{ shallowMap teamByName, =`
       <li class="tile">
         <a href="team/{{ @key }}.html">
           <img class="avatar small" src="headshots/{{ @key }}.jpg" alt="{{ name }}">
