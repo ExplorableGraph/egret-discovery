@@ -21,7 +21,7 @@ function updateSlideFromHash() {
   const currentSlideNumber = getCurrentSlideNumber();
   const hash = location.hash;
   const hashSlideNumber = hash ? parseInt(hash.substring(1)) : -1;
-  if (hashSlideNumber !== currentSlideNumber) {
+  if (hashSlideNumber >= 0 && hashSlideNumber !== currentSlideNumber) {
     document.body.children[hashSlideNumber].scrollIntoView();
   }
 }
