@@ -1,0 +1,3 @@
+message: Hello, world!
+"message = 'Hello, world!'": ""
+team.yaml: "[team data]"

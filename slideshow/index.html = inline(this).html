@@ -81,6 +81,20 @@
     <div class="slideContainer">
       <div class="slide figures two-up">
         <figure>
+          {{ svg realFiles.yaml }}
+        </figure>
+        <figcaption>Real source files graph</figcaption>
+
+        <figure>
+          {{ svg virtualFiles.yaml }}
+        </figure>
+        <figcaption>Virtual files graph</figcaption>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide figures two-up">
+        <figure>
           <img src="team.yaml.svg" />
         </figure>
         <figcaption>Team graph</figcaption>
@@ -114,7 +128,7 @@
     <div class="slideContainer">
       <div class="slide figures three-up">
         <figure class="textAndImage">
-          <pre><code>Hello, \{{name}}!</code></pre>
+          <pre><code>&lt;h1>\{{name}}&lt;/h1></code></pre>
           <img src="personTemplate.yaml.svg" />
         </figure>
         <figcaption>Graph for a person template…</figcaption>
@@ -124,7 +138,7 @@
         </figure>
         <figcaption>…combines with graph for a single person…</figcaption>
         <figure class="textAndImage">
-          <pre><code>Hello, {{team.yaml/0/name}}!</code></pre>
+          <pre><code>&lt;h1>{{team.yaml/0/name}}&lt;/h1></code></pre>
           <img src="personText.yaml.svg" />
         </figure>
         <figcaption>
@@ -137,7 +151,9 @@
       <div class="slide figures three-up">
         <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
-\{{ map team.yaml, =`&lt;li>\{{name}}&lt;/li>` }}</code></pre>
+\{{#map team.yaml}}
+  &lt;li>\{{name}}&lt;/li>
+\{{/map}}</code></pre>
           <img src="indexTemplate.yaml.svg" />
         </figure>
         <figcaption>Graph for an index page template…</figcaption>
@@ -148,8 +164,9 @@
         <figcaption>…combines with graph for the team…</figcaption>
         <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
-{{ map team.yaml, =`&lt;li>{{name}}&lt;/li>
-` }}</code></pre>
+{{#map team.yaml}}
+&lt;li>{{name}}&lt;/li>
+{{/map}}</code></pre>
           <img src="indexText.yaml.svg" />
         </figure>
         <figcaption>
