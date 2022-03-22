@@ -42,8 +42,10 @@ body {
   height: 100%;
   justify-items: center;
   margin: 0;
+  opacity: 1;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  transition: opacity 0.25s;
 }
 
 h1 {
@@ -76,6 +78,10 @@ figcaption {
 pre {
   overflow-y: auto;
   white-space: pre-wrap;
+}
+
+.showOnWindowLoad {
+  opacity: 0;
 }
 
 .slideContainer {

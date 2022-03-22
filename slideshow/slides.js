@@ -35,4 +35,5 @@ window.addEventListener("load", () => {
     setTimeout(updateHashFromSlide);
   });
   updateSlideFromHash();
+  document.body.classList.remove("showOnWindowLoad");
 });
