@@ -75,7 +75,9 @@
 
     <div class="slideContainer">
       <div class="slide figures" style="grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr);">
-        {{ map(assets/heart, =`<div class="heart">{{@value}}</div>`) }}
+        {{#map assets/heart}}
+          <div class="heart">{{@value}}</div>
+        {{/map}}
       </div>
     </div>
 
