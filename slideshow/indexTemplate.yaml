@@ -1,2 +1,2 @@
 - "<h1>About Us</h1>"
-- "{{#map team.yaml}}<li>{{name}}</li>{{/map}}"
+- "{{#map teamByName}}<li>{{name}}</li>{{/map}}"

@@ -154,8 +154,8 @@
       <div class="slide figures three-up">
         <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
-\{{#map team.yaml}}
-  &lt;li>\{{name}}&lt;/li>
+\{{#map teamByName}}
+&lt;li>\{{name}}&lt;/li>
 \{{/map}}</code></pre>
           <img src="indexTemplate.yaml.svg" />
         </figure>
@@ -167,7 +167,7 @@
         <figcaption>…combines with graph for the team…</figcaption>
         <figure class="textAndImage">
           <pre><code>&lt;h1>About Us&lt;/h1>
-{{#map team.yaml}}
+{{#map teamByName}}
 &lt;li>{{name}}&lt;/li>
 {{/map}}</code></pre>
           <img src="indexText.yaml.svg" />
