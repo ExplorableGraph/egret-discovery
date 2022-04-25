@@ -1,2 +1,2 @@
 0: "<h1>About Us</h1>"
-1 = map(teamByName, =`<li>{{name}}</li>`):
+1 = shallowMap(teamByName, =`<li>{{name}}</li>`):
