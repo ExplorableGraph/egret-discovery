@@ -27,7 +27,7 @@ index.html = index.ori():
 index.ori: |
   {{#map teamByName}}
     <a href="team/{{@key}}.html" style="display: inline-block;">
-      <img src="thumbnails/{{@key}}.jpg" alt="{{@key}}" style="display: block;" />
+      <img src="thumbnails/{{@key}}.jpg" alt="Picture of {{name}}" style="display: block;" />
       {{name}}
     </a>
   {{/map}}
@@ -42,7 +42,7 @@ thumbnails = map(headshots, thumbnail):
 team = map(teamByName, person.ori, '', '.html'):
 
 person.ori: |
-  <img src="../headshots/{{id}}.jpg" alt="{{name}}">
+  <img src="../headshots/{{id}}.jpg" alt="Picture of {{name}}">
   <h2>{{name}}</h2>
   <div>
     {{position}}, {{location}}
