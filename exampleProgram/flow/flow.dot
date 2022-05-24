@@ -1,0 +1,27 @@
+digraph g {
+  nodesep=1;
+  rankdir=LR;
+  ranksep=1.5;
+  node [color=gray70; fillcolor="white"; fontname="Helvetica"; fontsize="10"; nojustify=true; style="filled"; shape=box];
+  edge [arrowhead=vee; arrowsize=0.75; color=gray60; fontname="Helvetica"; fontsize="10"; labeldistance=5];
+
+  "headshots" [URL="../headshots"];
+  "index.html" [URL="../index.html"];
+  "index.ori" [URL="../index.ori"];
+  "person.ori" [URL="../person.ori"];
+  "team" [URL="../team"];
+  "team.yaml" [URL="../team.yaml"];
+  "teamByName" [URL="../teamByName"];
+  "thumbnail" [URL="../thumbnail"];
+  "thumbnails" [URL="../thumbnails"];
+  
+  "headshots" -> "person.ori";
+  "headshots" -> "thumbnails";
+  "index.ori" -> "index.html";
+  "person.ori" -> "team";
+  "team.yaml" -> "teamByName";
+  "teamByName" -> "index.html";
+  "teamByName" -> "team";
+  "thumbnail" -> "thumbnails";
+  "thumbnails" -> "index.ori"; 
+}
