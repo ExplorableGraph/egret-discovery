@@ -19,7 +19,6 @@ digraph g {
   "headshots" -> "thumbnails";
   "index.ori" -> "index.html";
   "person.ori" -> "team";
-  "team" -> "index.ori";
   "team.yaml" -> "teamByName";
   "teamByName" -> "index.ori";
   "teamByName" -> "team";
