@@ -37,7 +37,7 @@
 <g id="node9" class="node">
 <title>thumbnails</title>
 <g id="a_node9"><a xlink:href="../thumbnails" xlink:title="thumbnails">
-<polygon fill="white" stroke="#b3b3b3" points="240.5,-36 176.5,-36 176.5,0 240.5,0 240.5,-36"/>
+<polygon fill="none" stroke="#b3b3b3" stroke-dasharray="5,2" points="240.5,-36 176.5,-36 176.5,0 240.5,0 240.5,-36"/>
 <text text-anchor="middle" x="208.5" y="-15.5" font-family="Helvetica,sans-Serif" font-size="10.00">thumbnails</text>
 </a>
 </g>
@@ -52,7 +52,7 @@
 <g id="node2" class="node">
 <title>index.html</title>
 <g id="a_node2"><a xlink:href="../index.html" xlink:title="index.html">
-<polygon fill="white" stroke="#b3b3b3" points="579,-90 517,-90 517,-54 579,-54 579,-90"/>
+<polygon fill="none" stroke="#b3b3b3" stroke-dasharray="5,2" points="579,-90 517,-90 517,-54 579,-54 579,-90"/>
 <text text-anchor="middle" x="548" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">index.html</text>
 </a>
 </g>
@@ -76,7 +76,7 @@
 <g id="node5" class="node">
 <title>team</title>
 <g id="a_node5"><a xlink:href="../team" xlink:title="team">
-<polygon fill="white" stroke="#b3b3b3" points="409,-225 355,-225 355,-189 409,-189 409,-225"/>
+<polygon fill="none" stroke="#b3b3b3" stroke-dasharray="5,2" points="409,-225 355,-225 355,-189 409,-189 409,-225"/>
 <text text-anchor="middle" x="382" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">team</text>
 </a>
 </g>
@@ -100,7 +100,7 @@
 <g id="node7" class="node">
 <title>teamByName</title>
 <g id="a_node7"><a xlink:href="../teamByName" xlink:title="teamByName">
-<polygon fill="white" stroke="#b3b3b3" points="247,-144 170,-144 170,-108 247,-108 247,-144"/>
+<polygon fill="none" stroke="#b3b3b3" stroke-dasharray="5,2" points="247,-144 170,-144 170,-108 247,-108 247,-144"/>
 <text text-anchor="middle" x="208.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">teamByName</text>
 </a>
 </g>

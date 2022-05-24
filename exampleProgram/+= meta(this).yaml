@@ -1,21 +1,7 @@
 #
-# Team data is our starting point.
+# The team data in team.yaml is our starting point.
+# Index that data using a person's `id` as the key.
 #
-team.yaml:
-  - id: Alice
-    name: Alice Wijaya
-    location: Jakarta
-    position: Experience Designer
-  - id: Bob
-    name: Bob Cardenas
-    location: Lima
-    position: Administrator
-  - id: Carol
-    name: Carol Davenhall
-    location: Los Angeles
-    position: President
-
-# Use the person's `id` as the key for their data
 teamByName = mapKeys(team.yaml, =id):
 
 #

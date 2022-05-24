@@ -6,14 +6,14 @@ digraph g {
   edge [arrowhead=vee; arrowsize=0.75; color=gray60; fontname="Helvetica"; fontsize="10"; labeldistance=5];
 
   "headshots" [URL="../headshots"];
-  "index.html" [URL="../index.html"];
+  "index.html" [URL="../index.html"; style="dashed"];
   "index.ori" [URL="../index.ori"];
   "person.ori" [URL="../person.ori"];
-  "team" [URL="../team"];
+  "team" [URL="../team"; style="dashed"];
   "team.yaml" [URL="../team.yaml"];
-  "teamByName" [URL="../teamByName"];
+  "teamByName" [URL="../teamByName"; style="dashed"];
   "thumbnail" [URL="../thumbnail"];
-  "thumbnails" [URL="../thumbnails"];
+  "thumbnails" [URL="../thumbnails"; style="dashed"];
   
   "headshots" -> "person.ori";
   "headshots" -> "thumbnails";

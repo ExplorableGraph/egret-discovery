@@ -1,0 +1,12 @@
+- id: Alice
+  name: Alice Wijaya
+  location: Jakarta
+  position: Experience Designer
+- id: Bob
+  name: Bob Cardenas
+  location: Lima
+  position: Administrator
+- id: Carol
+  name: Carol Davenhall
+  location: Los Angeles
+  position: President
