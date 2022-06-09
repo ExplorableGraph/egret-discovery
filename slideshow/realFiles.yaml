@@ -1,2 +1,2 @@
-"message = 'Hello, world!'": ""
-team.yaml: "[team data]"
+name: Alice
+message = greet(name):
