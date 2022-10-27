@@ -19,6 +19,22 @@
     </div>
 
     <div class="slideContainer">
+      <div class="slide diagram">
+        <figure>
+          <img src="assets/artifact.svg">
+        </figure>
+      </div>
+    </div>
+
+    <div class="slideContainer">
+      <div class="slide diagram">
+        <figure>
+          <img src="assets/transformation.svg">
+        </figure>
+      </div>
+    </div>
+
+    <div class="slideContainer">
       <div class="slide figures ">
         <figure>
           {{ svg goal }}
