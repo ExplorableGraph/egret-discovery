@@ -1,0 +1,5 @@
+title: About Us
+teamByName = mapKeys(team.yaml, =name):
+
+focused.yaml = take(team.yaml, 3):
+focusedByName = mapKeys(focused.yaml, =name):

@@ -1,0 +1,6 @@
+avatars = take(../avatars, 3):
+personIcon.svg = ../personIcon.svg:
+styles.css = ../styles.css:
+
+index.html = index.ori():
+team = map(focusedByName, person.ori, '', '.html'):

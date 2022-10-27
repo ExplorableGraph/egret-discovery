@@ -1,0 +1,6 @@
+avatars = ../avatars:
+personIcon.svg = ../personIcon.svg:
+styles.css = ../styles.css:
+
+index.html = index.ori():
+team = map(teamByName, person.ori, '', '.html'):
