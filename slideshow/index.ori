@@ -21,7 +21,7 @@
     <div class="slideContainer">
       <div class="slide figures ">
         <figure>
-          <img src="site.yaml.svg" />
+          {{ svg goal }}
         </figure>
         <figcaption>Desired graph for the About Us website</figcaption>
       </div>
@@ -29,11 +29,11 @@
 
     <div class="slideContainer">
       <div class="slide figures two-up">
-        <pre><code>{{ team.yaml }}</code></pre>
+        <pre><code>{{ yaml focused }}</code></pre>
         <figcaption>Array of people in team.yaml</figcaption>
 
         <figure>
-          <img src="team.yaml.svg" />
+          {{ svg focused }}
         </figure>
         <figcaption>Graph representation</figcaption>
       </div>
@@ -42,19 +42,19 @@
     <div class="slideContainer">
       <div class="slide figures two-up">
         <figure>
-          <img src="team.yaml.svg" />
+         {{ svg focused }}
         </figure>
         <figcaption>Want to transform this data graph…</figcaption>
 
         <figure>
-          <img src="site.yaml.svg" />
+          {{ svg goal }}
         </figure>
         <figcaption>…into this website graph</figcaption>
       </div>
     </div>
 
     <div class="slideContainer">
-      <div class="slide figures" style="grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr);">
+      <div class="slide figures hearts" style="grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr);">
         {{#map assets/heart}}
           <div class="heart">{{.}}</div>
         {{/map}}
@@ -64,26 +64,12 @@
     <div class="slideContainer">
       <div class="slide figures two-up">
         <figure>
-          {{ svg realFiles.yaml }}
-        </figure>
-        <figcaption>Graph with real values</figcaption>
-
-        <figure>
-          {{ svg virtualFiles.yaml }}
-        </figure>
-        <figcaption>Graph with virtual values from formulas</figcaption>
-      </div>
-    </div>
-
-    <div class="slideContainer">
-      <div class="slide figures two-up">
-        <figure>
-          <img src="team.yaml.svg" />
+          {{ svg focused }}
         </figure>
         <figcaption>Team graph</figcaption>
 
         <figure>
-          <img src="greetings.svg" />
+          {{ svg greetings }}
         </figure>
         <figcaption>Greetings graph</figcaption>
       </div>
@@ -92,17 +78,17 @@
     <div class="slideContainer">
       <div class="slide figures three-up">
         <figure>
-          <img src="team.yaml.svg" />
+          {{ svg focused }}
         </figure>
         <figcaption>Source form has numbers as keys</figcaption>
 
         <figure>
-          <img src="teamByName.svg" />
+          {{ svg focusedByName }}
         </figure>
         <figcaption>Use names as keys</figcaption>
 
         <figure>
-          <img src="team.svg" />
+          {{ svg team }}
         </figure>
         <figcaption>Map values to HTML and add extension</figcaption>
       </div>
@@ -112,17 +98,17 @@
       <div class="slide figures three-up">
         <figure class="textAndImage">
           <pre><code>&lt;h1>\{{name}}&lt;/h1></code></pre>
-          <img src="personTemplate.yaml.svg" />
+          {{ svg personTemplate.yaml }}
         </figure>
         <figcaption>Graph for a person template…</figcaption>
         <figure class="textAndImage">
           <pre><code>&nbsp;</code></pre>
-          <img src="firstPerson.svg" />
+          {{ svg focused/0 }}
         </figure>
         <figcaption>…combines with graph for a single person…</figcaption>
         <figure class="textAndImage">
           <pre><code>&lt;h1>{{team.yaml/0/name}}&lt;/h1></code></pre>
-          <img src="personText.yaml.svg" />
+          {{ svg personText.yaml }}
         </figure>
         <figcaption>
           …to create graph that flattens to final text</code>
@@ -137,12 +123,12 @@
 \{{#map teamByName}}
 &lt;li>\{{name}}&lt;/li>
 \{{/map}}</code></pre>
-          <img src="indexTemplate.yaml.svg" />
+          {{ svg indexTemplate.yaml }}
         </figure>
         <figcaption>Graph for an index page template…</figcaption>
         <figure class="textAndImage">
           <pre><code>&nbsp;</code></pre>
-          <img src="teamByName.svg" />
+          {{ svg focusedByName }}
         </figure>
         <figcaption>…combines with graph for the team…</figcaption>
         <figure class="textAndImage">
@@ -150,7 +136,7 @@
 {{#map teamByName}}
 &lt;li>{{name}}&lt;/li>
 {{/map}}</code></pre>
-          <img src="indexText.yaml.svg" />
+          {{ svg indexText.yaml }}
         </figure>
         <figcaption>
           …to create graph that flattens to final text
@@ -161,10 +147,10 @@
     <div class="slideContainer">
       <div class="slide figures two-up noCaption">
         <figure>
-          <img src="team.yaml.svg" />
+          {{ svg focused }}
         </figure>
         <figure>
-          <img src="siteWithAvatars.yaml.svg" />
+          {{ svg goal }}
         </figure>
       </div>
     </div>

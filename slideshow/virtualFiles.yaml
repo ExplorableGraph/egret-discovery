@@ -1,3 +1,0 @@
-name: Alice
-message = greet(name):
-message: Hello, Alice!

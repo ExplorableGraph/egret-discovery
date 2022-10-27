@@ -1,8 +1,0 @@
-# This will find `name` in the outer scope
-message = greet(name):
-name: Bob
-
-object:
-  # This will find `name` in the inner scope
-  message = greet(name):
-  name: Carol

@@ -1,0 +1,25 @@
+team.yaml = src/team.yaml:
+
+teamByName = mapKeys(team.yaml, =name):
+team = map(teamByName, ../assets/person.ori, '', '.html'):
+
+focused = map(team.yaml, focus):
+focusedByName = mapKeys(focused, =name):
+
+personText.yaml = meta(this):
+  0: "<h1>"
+  1 = team.yaml/0/name:
+  2: "</h1>"
+
+indexText.yaml = meta(this):
+  0: "<h1>About Us</h1>"
+  1 = map(teamByName, =`<li>{{name}}</li>`):
+
+greetings = map(team.yaml, =`Hello, {{name}}!`):
+
+goal = meta(this):
+  avatars = map(teamByName, ='[binary data]', '', '.jpeg'):
+  index.html: <title>About Us</title>
+  team = map(teamByName, =`<title>{{name}}</title>`, '', '.html'):
+
+index.html = index.ori():
