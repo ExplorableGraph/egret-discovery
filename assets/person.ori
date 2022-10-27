@@ -15,6 +15,12 @@
     <main class="person">
       <img class="avatar large" src="../avatars/{{name}}.jpeg" alt="{{name}}" />
       <h2 class="name">{{name}}</h2>
+      <div class="position">
+        {{./location}}
+      </div>
+      <p class="bio">
+        {{./bio}}
+      </p>
     </main>
   </body>
 </html>

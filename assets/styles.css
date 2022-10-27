@@ -127,6 +127,7 @@ header {
 }
 
 .name,
+.location,
 .position {
   text-align: center;
 }

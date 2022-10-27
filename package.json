@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@explorablegraph/explorable": "github:ExplorableGraph/explorable#1ef005e3",
+    "@graphorigami/origami": "0.0.19",
     "node-fetch": "3.2.3",
     "sharp": "0.29.3"
   },

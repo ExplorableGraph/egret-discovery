@@ -1,3 +1,27 @@
 - name: Alice
+  avatar: sleepy cat
+  location: Los Angeles
+  bio: I open the line of communication between clients, customers, and
+    businesses to get projects done. With over 15 years in both public and
+    private sectors, I have experience in management consultation, team
+    building, professional development, strategic implementation, and company
+    collaboration. I have a passion for helping people and businesses succeed,
+    and is always looking for ways to improve the world.
 - name: Bob
+  avatar: curious squirrel
+  location: Vancouver
+  bio: Having been an art student for 11 years, I constantly explore various
+    disciplines to broaden my own artistic pursuits, integrating a fine art
+    background with design studies and illustration. My current areas of
+    interest and exploration are my culture, human-centered design, and
+    branding. I begin projects by thoroughly researching and then developing my
+    ideas through creative thinking.
 - name: Carol
+  avatar: running dog
+  location: Buenos Aires
+  bio:
+    After working as a manager for numerous startups over the years, I decided
+    to take the plunge and start a business of my own. I love the challenges I
+    face as a entrepreneur, and it didn't take long for me to discover that this
+    was my calling. I feel that I have the ability to create a business that is
+    both profitable and sustainable.
